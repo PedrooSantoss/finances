@@ -1,0 +1,105 @@
+.task{
+  background-color:rgb(177, 116, 234);
+  border-radius: 8px;
+}
+.input{
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  margin-left: 5px;
+  margin-right: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.button{
+  width: 10%;
+  height: 30px;
+  background-color: #00ff2a;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+ 
+}
+.button:hover{
+  background-color: #fff;
+  color: #000000;
+  border: 1px solid #000;
+}
+.buttonex{
+  width: 10%;
+  height: 30px;
+  background-color: #ff0000;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-left: 5px;
+}
+.buttonex:hover{
+  background-color: #fff;
+  color: #000000;
+  border: 1px solid #000;
+}
+.buttoned{
+  width: 10%;
+  height: 30px;
+  background-color: #1100ff;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-left: 5px;
+}
+.buttoned:hover{
+  background-color: #fff;
+  color: #000000;
+  border: 1px solid #000;
+}
+.buttonfe{
+  width: 10%;
+  height: 30px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-left: 5px;
+}
+.buttonfe:hover{
+  background-color: #fff;
+  color: #000000;
+  border: 1px solid #000;
+}
+.buttonsa{
+  width: 10%;
+  height: 30px;
+  background-color: #ff008c;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-left: 5px;
+}
+.buttonsa:hover{
+  background-color: #fff;
+  color: #000000;
+  border: 1px solid #000;
+}
