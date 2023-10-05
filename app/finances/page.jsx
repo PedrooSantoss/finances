@@ -3,6 +3,7 @@ import { useState } from 'react'
 import styles from './finances.module.css'
 import Transacao from '/models/Transacao'
 import ListaTransacoes from '/models/ListaTransacoes'
+import Link from 'next/link'
 const listaTransacoes = new ListaTransacoes();
 
 function Finances() {
@@ -77,6 +78,10 @@ function Finances() {
     }
     return (
         <>
+        <div>
+            <h1>home⬇️</h1>
+            <Link href="/">Clique aqui</Link>
+        </div>
             <div className={styles.container}>
                 <div className={styles.profile}>
                     <p className={styles.welcome}>Olá, Pedro</p>
