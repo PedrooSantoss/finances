@@ -5,7 +5,7 @@ import React from 'react'
 function page() {
   return (
     <div>
-        <Link href="/finances"></Link>
+        <Link href="/finances">Entre para as finanças</Link>
     </div>
   )
 }
