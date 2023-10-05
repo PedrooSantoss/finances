@@ -79,11 +79,12 @@ function Finances() {
     return (
         <>
         <div>
-            <h1>home⬇️</h1>
-            <Link href="/">Clique aqui</Link>
+
         </div>
             <div className={styles.container}>
                 <div className={styles.profile}>
+                    <h1>home⬇️</h1>
+                    <Link href="/">Clique aqui</Link>
                     <p className={styles.welcome}>Olá, Pedro</p>
                     <p className={styles.useremail}>pedro.miguel@aluno.senai.br</p>
                 </div>
