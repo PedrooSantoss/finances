@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server'
 
 let transacoes = [
-  { id: 1, descricao: 'Salário', valor: 0, tipo: 'RECEITA' },
-  { id: 2, descricao: 'Aluguel', valor: 0, tipo: 'DESPESA' },
+  { id: 1, descricao: 'ㅤㅤㅤ', valor: 0, tipo: 'RECEITA' },
+  { id: 2, descricao: 'ㅤㅤㅤ', valor: 0, tipo: 'DESPESA' },
 ]
 
 export async function GET() {
@@ -16,7 +16,7 @@ export async function POST(request) {
   if (!dados.descricao || !dados.valor || !dados.tipo) {
     return NextResponse.json({ error: 'Dados incompletos' }, { status: 400 })
   }
-
+ 
   const novaTransacao = {
     id,
     descricao: dados.descricao,
