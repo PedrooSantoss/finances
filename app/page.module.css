@@ -1,106 +1,42 @@
+/* page.module.css */
 
-.task{
-  background-color:rgb(177, 116, 234);
-  border-radius: 8px;
-}
-.input{
-  margin-bottom: 20px;
-  padding: 10px;
-  font-size: 16px;
-  width: 200px;
-  margin-left: 5px;
-  margin-right: 10px;
-  border-radius: 8px;
-  border: none;
-}
-
-.button{
-  width: 10%;
-  height: 30px;
-  background-color: #00ff2a;
-  color: #000000;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
- 
-}
-.button:hover{
-  background-color: #fff;
-  color: #000000;
-  border: 1px solid #000;
-}
-.buttonex{
-  width: 10%;
-  height: 30px;
-  background-color: #ff0000;
-  color: #000000;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  margin-left: 5px;
-}
-.buttonex:hover{
-  background-color: #fff;
-  color: #000000;
-  border: 1px solid #000;
-}
-.buttoned{
-  width: 10%;
-  height: 30px;
-  background-color: #1100ff;
-  color: #000000;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  margin-left: 5px;
-}
-.buttoned:hover{
-  background-color: #fff;
-  color: #000000;
-  border: 1px solid #000;
-}
-.buttonfe{
-  width: 10%;
-  height: 30px;
-  background-color: #000000;
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
   color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.button {
+  background: linear-gradient(90deg, #3b82f6, #9333ea);
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
   border: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  font-weight: 500;
+  border-radius: 12px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  margin-left: 5px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
-.buttonfe:hover{
-  background-color: #fff;
-  color: #000000;
-  border: 1px solid #000;
-}
-.buttonsa{
-  width: 10%;
-  height: 30px;
-  background-color: #ff008c;
-  color: #000000;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  margin-left: 5px;
-}
-.buttonsa:hover{
-  background-color: #fff;
-  color: #000000;
-  border: 1px solid #000;
+
+.button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #4f46e5, #a855f7);
 }

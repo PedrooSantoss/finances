@@ -1,273 +1,213 @@
+/* finances.module.css */
 
-
-/* Container Styles */
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
   min-height: 100vh;
-  background-color: #c4cfdb;
+  color: white;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .profile {
-  text-align: center;
-  color: #fff;
-}
-
-.profile h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.welcome {
-  font-size: 18px;
-  margin-top: 10px;
-}
-
-.useremail {
-  font-size: 14px;
-  margin-top: 5px;
-}
-
-/* Main Content Styles */
-.content {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 20px;
-}
-
-.mainheader {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+
+.welcome {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.useremail {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mainheader {
+  margin-bottom: 2rem;
 }
 
 .title {
-  font-size: 24px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .transaction {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .inputdescription {
-  margin-right: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.inputdescription::placeholder {
+  color: #aaa;
 }
 
 .type {
   display: flex;
   align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-.buttonAtualizar,
 .buttonreceita,
-.buttondespesa {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  color: #fff;
-  transition: background-color 0.3s;
-}
-
+.buttondespesa,
 .buttonAtualizar {
-  background-color: #003366;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .buttonreceita {
-  background-color: #4caf50;
+  background: linear-gradient(to right, #4ade80, #22c55e);
+  color: #000;
 }
 
 .buttondespesa {
-  background-color: #f44336;
+  background: linear-gradient(to right, #f87171, #ef4444);
+  color: #000;
 }
 
-.buttonAtualizar:hover,
+.buttonAtualizar {
+  background: linear-gradient(to right, #60a5fa, #3b82f6);
+  color: #000;
+}
+
 .buttonreceita:hover,
-.buttondespesa:hover {
-  opacity: 0.8;
+.buttondespesa:hover,
+.buttonAtualizar:hover {
+  transform: scale(1.05);
 }
 
-/* Card Styles */
+.infos {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
 .cardSaldo,
 .cardReceitas,
 .cardDespesas {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  text-align: center;
-  margin-right: 10px;
   flex: 1;
+  min-width: 250px;
+  background: #1f1f1f;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
 }
 
 .cardTitle {
-  font-size: 18px;
-  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ccc;
+  margin-bottom: 0.5rem;
 }
 
 .cardValue {
-  font-size: 24px;
+  font-size: 2rem;
   font-weight: bold;
+  color: #fff;
 }
 
-/* Registros Styles */
 .registros {
+  margin-top: 3rem;
   display: flex;
-  margin-top: 20px;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .registrosreceitas,
 .registrosdespesas {
-  flex: 1;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-right: 10px;
+  background: #111;
+  border-radius: 10px;
+  padding: 1.5rem;
 }
 
 .registrosreceitastitle,
 .registrosdespesastitle {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.registrosreceitaslist,
-.registrosdespesaslist {
-  display: flex;
-  flex-wrap: wrap;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .registrosreceitasitem,
 .registrosdespesasitem {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  flex-basis: calc(33.33% - 10px);
-  position: relative;
-}
-
-.registrosreceitasitemdescription,
-.registrosdespesasitemdescription {
-  font-size: 16px;
-  font-weight: bold;
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
 }
 
 .registrosreceitasitemvalue,
 .registrosdespesasitemvalue {
-  font-size: 16px;
-  margin-top: 5px;
+  font-weight: bold;
 }
 
 .actions {
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .actionsbutton {
-  padding: 5px 10px;
+  background-color: #333;
+  color: white;
   border: none;
-  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 14px;
-  color: #fff;
-  margin-right: 5px;
+  transition: background 0.3s ease;
 }
 
-.actionsbutton:nth-child(2) {
-  background-color: #003366;
+.actionsbutton:hover {
+  background-color: #444;
+}
+.homeButton {
+  display: inline-block;
+  background: linear-gradient(90deg, #3b82f6, #9333ea);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
 }
 
-.actionsbutton:nth-child(3) {
-  background-color: #f44336;
-}
-
-/* Central Bank Styling */
-.content {
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 20px;
-}
-
-.title {
-  font-size: 24px;
-  color: #003366;
-}
-
-.cardSaldo,
-.cardReceitas,
-.cardDespesas {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 20px;
-  text-align: center;
-  margin-right: 10px;
-  flex: 1;
-  color: #003366;
-}
-
-.buttonAtualizar,
-.buttonreceita,
-.buttondespesa {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  color: #fff;
-  transition: background-color 0.3s;
-}
-
-.buttonAtualizar {
-  background-color: #003366;
-  color: #fff;
-}
-
-.buttonreceita {
-  background-color: #4caf50;
-  color: #fff;
-}
-
-.buttondespesa {
-  background-color: #f44336;
-  color: #fff;
-}
-
-.registrosreceitasitem,
-.registrosdespesasitem {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  flex-basis: calc(33.33% - 10px);
-  position: relative;
-  color: #003366;
-}
-
-.actionsbutton:nth-child(2) {
-  background-color: #003366;
-  color: #fff;
-}
-
-.actionsbutton:nth-child(3) {
-  background-color: #f44336;
-  color: #fff;
+.homeButton:hover {
+  transform: translateY(-3px) scale(1.05);
+  background: linear-gradient(90deg, #4f46e5, #a855f7);
+  box-shadow: 0 6px 20px rgba(147, 51, 234, 0.5);
 }
